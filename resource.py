@@ -1,7 +1,10 @@
-import db
+import mongo_db
+import tiny_db
 import util
 from flask.ext.restful import Resource, marshal_with, reqparse 
 from format import *
+
+db = eval('mongo_db')
 
 # Questionnaire resource management
 class Questionnaire(Resource):
